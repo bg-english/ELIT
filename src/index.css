@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,700&family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Custom Sports-Grade Neon Gloss Styles */
+.text-glow {
+  text-shadow: 0 0 15px rgba(46, 204, 113, 0.6), 0 0 30px rgba(46, 204, 113, 0.2);
+}
+
+.animate-spin-slow {
+  animation: spin_slow 20s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse_slow 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes spin_slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse_slow {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 10px rgba(46, 204, 113, 0.2)); }
+  50% { opacity: 0.85; filter: drop-shadow(0 0 25px rgba(46, 204, 113, 0.45)); }
+}
+
+/* Responsive Custom Scrollbars for sports dashboard console */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020a05;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a3a2a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2ecc71;
+}

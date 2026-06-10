@@ -1,0 +1,6 @@
+{
+  "name": "ELIT High-Performance Training",
+  "description": "Elite Level Intelligence Training platform with real-time AI physical diagnostics, custom athletic profile mapping, nutrition planning, and tactical scouting simulations.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
